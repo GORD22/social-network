@@ -1,0 +1,1 @@
+export {IconText as default} from './ui/icon-text'
