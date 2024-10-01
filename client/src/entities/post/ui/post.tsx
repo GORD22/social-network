@@ -41,7 +41,7 @@ export const Post = (props: IPostProps) => {
             width={272}
             height={168}
             alt="logo"
-            src={item.image}
+            src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
           />
         )
       }
