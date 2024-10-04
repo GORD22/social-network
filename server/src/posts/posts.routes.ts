@@ -1,7 +1,10 @@
-import express from "express";
+import express, { Response } from "express";
 import postsController from "./posts.controllers";
-const router = express.Router();
+import { QueryRequest } from "../types";
+const postsRouter = express.Router();
 
-router.get("/", postsController.get);
+postsRouter.get("/", (req: QueryRequest<void>, res: Response) => {
+  return postsController.get(req, res)
+});
 
-export default router;
+export default postsRouter;
